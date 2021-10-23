@@ -203,6 +203,7 @@ def user_stats(df):
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-' * 40)
 
+    # Display data based on location
     view_data = input('\nWould you like to view 5 rows of individual trip data?? Enter yes or no\n')
     start_loc = 5
     while True:
