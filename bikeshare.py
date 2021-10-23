@@ -21,7 +21,7 @@ def get_filters():
     while True:
         city = input("\nWhich city would you like to filter by?? New York City, Chicago or Washington??\n").title()
         if city not in ('New York City', 'Chicago', 'Washington'):
-            print("Sorry, I didn't catch that. Try again.")
+            print("Sorry, I did not get that. Retry.")
             continue
         else:
             break
@@ -203,6 +203,7 @@ def user_stats(df):
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-' * 40)
 
+    # Display data based on location
     view_data = input('\nWould you like to view 5 rows of individual trip data?? Enter yes or no\n')
     start_loc = 5
     while True:
